@@ -16,7 +16,7 @@ if( ! function_exists( 'layers_child_styles' ) ) {
 			'layers-parent-style',
 			get_template_directory_uri() . '/style.css',
 			array()
-		); // Typography
+		); // Parent Style for Version visibility
 
 		
 	}
