@@ -1,0 +1,33 @@
+/*
+ Theme Name:   Layers BuddyPress Child
+ Description:  Child theme for Layers to add support for BuddyPress content.
+ Author:       Vail Joy
+ AuthorURI:    http://www.layerswp.com
+ Template:     layerswp
+ Version:      1.0.0
+ License:      GPL 2.0
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ 
+ To learn more about extending this child theme with
+ custom styling or extended BuddyPress features, 
+ refer to the BuddyPress Codex:
+ https://codex.buddypress.org/themes/
+ 
+*/
+.buddypress .entry-header,
+.buddypress .entry-content,
+.buddypress .entry-summary,
+.buddypress .entry-meta {
+    max-width: 1040px;
+    width: 100%;
+}
+ 
+@ media (max-width: 1069px) {
+    .buddypress .entry-header,
+    .buddypress .entry-content,
+    .buddypress .entry-summary,
+    .buddypress .entry-meta {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
