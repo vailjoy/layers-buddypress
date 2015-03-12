@@ -13,7 +13,7 @@ get_header(); ?>
     <div class="row">
         <?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?>
-                <article class="pull-left column span-9">
+                <article class="pull-left column span-8">
                     <?php global $post, $layers_post_meta_to_display, $layers_page_title_shown; ?>
 						<?php if( !isset( $layers_page_title_shown ) ) { ?>
 							<header class="section-title large">
@@ -25,7 +25,7 @@ get_header(); ?>
 							</header>
                             <?php do_action( 'layers_after_buddypress_header' ); ?>
 						<?php } ?>
-                        <div class="story">		
+                      
                 
 							<?php the_content(); ?>
                             
@@ -36,12 +36,12 @@ get_header(); ?>
                                 'after'     => '</p>'
                             )); ?>
                 
-                        </div>
+                      
 
                 </article>
             <?php endwhile; // while has_post(); ?>
         <?php endif; // if has_post() ?>  
-         <?php get_sidebar('buddypress'); ?>   
+        <?php get_sidebar('buddypress'); ?>   
     </div>
    
 </section>

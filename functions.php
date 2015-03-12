@@ -16,7 +16,7 @@ if( ! function_exists( 'layers_child_styles' ) ) {
 			'layers-parent-style',
 			get_template_directory_uri() . '/style.css',
 			array()
-		); // Parent Style for Version visibility
+		); //Parent Style for Version visibility
 
 		
 	}
@@ -29,7 +29,7 @@ function layers_child_register_bp_widgets_area() {
         'name'       => __( 'BuddyPress Sidebar', 'layers' ),
         'id'         => 'bp-sidebar',
         'description'    => __( 'Appears in the sidebar section of all BuddyPress pages.', 'layers' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'before_widget' => '<aside id="%1$s" class="content well push-bottom-large widget %2$s">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',

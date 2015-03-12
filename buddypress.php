@@ -24,7 +24,7 @@ get_header(); ?>
 							</header>
                             <?php do_action( 'layers_after_buddypress_header' ); ?>
 						<?php } ?>
-                        <div class="story">		
+                    
                 
 							<?php the_content(); ?>
                             
@@ -35,7 +35,7 @@ get_header(); ?>
                                 'after'     => '</p>'
                             )); ?>
                 
-                        </div>
+                      
 
                 </article>
             <?php endwhile; // while has_post(); ?>

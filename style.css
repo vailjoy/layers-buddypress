@@ -4,7 +4,7 @@
  Author:       Vail Joy
  AuthorURI:    http://www.layerswp.com
  Template:     layerswp
- Version:      1.0.0
+ Version:      1.0.1
  License:      GPL 2.0
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  
@@ -14,6 +14,7 @@
  https://codex.buddypress.org/themes/
  
 */
+
 .buddypress .entry-header,
 .buddypress .entry-content,
 .buddypress .entry-summary,
@@ -22,7 +23,18 @@
     width: 100%;
 }
  
-@ media (max-width: 1069px) {
+#buddypress form#whats-new-form textarea{min-height: 85px;}
+#buddypress div.item-list-tabs{border-bottom: 2px solid #eee;}
+#buddypress .item-list-tabs label{display: none;}
+#buddypress .feed{
+	font-size: 1.3rem; 
+	height: 36px;
+    padding: 4px 0;
+}
+#buddypress div.item-list-tabs#subnav ul li.last{margin: 0;}
+#buddypress div.item-list-tabs#subnav{margin-bottom: 20px; padding-bottom: 10px;}
+#buddypress .activity-list .activity-content .activity-header img.avatar{display: inline-block;}
+@ media (max-width: 1140px) {
     .buddypress .entry-header,
     .buddypress .entry-content,
     .buddypress .entry-summary,
