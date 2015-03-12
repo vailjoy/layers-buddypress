@@ -24,8 +24,6 @@ get_header(); ?>
 							</header>
                             <?php do_action( 'layers_after_buddypress_header' ); ?>
 						<?php } ?>
-						<?php // Layers Featured Media
-						echo layers_post_featured_media( array( 'postid' => get_the_ID(), 'wrap_class' => 'thumbnail push-bottom', 'size' => 'large' ) ); ?>
                         <div class="story">		
                 
 							<?php the_content(); ?>
