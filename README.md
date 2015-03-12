@@ -17,5 +17,9 @@ You must have Layers 1.0.4 or later installed, and BuddyPress 1.7 or later
  refer to the BuddyPress Codex.
  
  [http://codex.buddypress.org/themes/](https://codex.buddypress.org/themes/)
+ 
+ and see the Layers Child Theme Guide and Developer Resources here:
+ 
+ [http://docs.layerswp.com] (http://docs.layerswp.com)
 
 
