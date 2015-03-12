@@ -24,7 +24,7 @@ You must have Layers 1.0.4 or later installed, and BuddyPress 1.7 or later
  
  [http://docs.layerswp.com](http://docs.layerswp.com)
  
- # Hooks
+# Hooks
  
  This child theme includes four hooks:
 
