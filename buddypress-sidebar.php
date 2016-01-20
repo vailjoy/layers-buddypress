@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <?php do_action( 'layers_before_buddypress_content' ); ?>
-<section id="post-<?php the_ID(); ?>" <?php post_class( 'content-main clearfix' ); ?>>
+<section id="post-<?php the_ID(); ?>" <?php post_class( 'container content-main clearfix' ); ?>>
     <div class="row">
         <?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?>
