@@ -8,11 +8,11 @@
 
 get_header(); ?>
 <?php do_action( 'layers_before_buddypress_content' ); ?>
-<section id="post-<?php the_ID(); ?>" <?php post_class( 'container content-main clearfix' ); ?>>
-    <div class="row">
+<div class="container content-main clearfix">
+    <div class="grid">
         <?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?>
-                <article <?php layers_center_column_class(); ?>>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(layers_center_column_class()); ?>>
                     <?php global $post, $layers_post_meta_to_display, $layers_page_title_shown; ?>
 						<?php if( !isset( $layers_page_title_shown ) ) { ?>
 							<header class="section-title large">
@@ -41,6 +41,6 @@ get_header(); ?>
             <?php endwhile; // while has_post(); ?>
         <?php endif; // if has_post() ?>     
     </div>
-</section>
+</div>
 <?php do_action( 'layers_after_buddypress_content' ); ?>
 <?php get_footer(); ?>

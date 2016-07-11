@@ -9,11 +9,11 @@
 
 get_header(); ?>
 <?php do_action( 'layers_before_buddypress_content' ); ?>
-<section id="post-<?php the_ID(); ?>" <?php post_class( 'container content-main clearfix' ); ?>>
-    <div class="row">
+<div class="container content-main clearfix">
+    <div class="grid">
         <?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?>
-                <article class="pull-left column span-8">
+                <article id="post-<?php the_ID(); ?>" <?php post_class( 'column span-8')?>>
                     <?php global $post, $layers_post_meta_to_display, $layers_page_title_shown; ?>
 						<?php if( !isset( $layers_page_title_shown ) ) { ?>
 							<header class="section-title large">
@@ -44,7 +44,7 @@ get_header(); ?>
         <?php get_sidebar('buddypress'); ?>   
     </div>
    
-</section>
+</div>
 <?php do_action( 'layers_after_buddypress_content' ); ?>
 
 <?php get_footer(); ?>
